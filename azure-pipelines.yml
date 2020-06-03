@@ -16,7 +16,7 @@ variables:
 
 steps:
 - task: UseDotNet@2
-  displayname: 'Use .NET Core SDK 3.1.300'
+  displayName: 'Use .NET Core SDK 3.1.300'
   inputs:
     packagetype: sdk
     version: 3.1.300
@@ -30,7 +30,7 @@ steps:
   workingDirectory: Tailspin.SpaceGame.web/wwwroot
 
 - task: gulp@1
-  displayname: 'Run gulp tasks'
+  displayName: 'Run gulp tasks'
 
 - task: DotNetCoreCLI@2
   displayName: 'Restore project dependencies'
